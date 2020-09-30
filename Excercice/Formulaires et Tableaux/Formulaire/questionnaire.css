@@ -1,0 +1,63 @@
+body 
+{
+	font-family:"trebuchet ms",sans-serif;
+ 	font-size:90%;
+ }
+
+legend
+{
+	color: red;
+	color:#DF3F3F;
+ 	font-weight:bold
+}
+
+fieldset
+{
+    border: 1px solid red;
+    width: 40%;
+}
+
+label {
+ margin-top:10px;
+ }
+
+label.definie
+{
+	display: block;
+}
+
+label.code
+{
+	display: inline-block;
+}
+
+input.code
+{
+	display: inline-block;
+}
+
+label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+
+input[type=checkbox] {
+ display: inline-block;
+ }
+
+input, textarea, select, option {
+ background-color:#FFF3F3;
+ }
+
+input.definie, textarea, select {
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+
+select {
+ margin-top:10px;
+ }
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questionnaire.css"/>
+    <title>Exercice 1 : Le Formulaire</title>
+</head>
+
+<body>
+	<fieldset>
+		<legend>Mon superbe questionnaire</legend>
+
+		<!-- ************** Texte *************** -->
+			<label for="name" class="definie">Votre nom:</label>
+			<input type="text" name="name" class="definie">
+			<label for="first_name" class="definie">Votre prénom:</label>
+			<input type="text" name="first_name" class="definie">
+			<label for="mail" class="definie">Votre mail:</label>
+			<input type="email" name="mail" class="definie">
+			<label for="age" class="definie">Votre âge:</label>
+			<input type="number" name="age" min="16" max="99" class="definie"> ans
+
+		<!-- ************** Sex *************** -->
+		<p>Votre sexe:</p>
+			<input type="radio" name="CSS" value="oui" id="oui" checked="checked" />
+     		<label for="Homme" class="inline">Homme</label>
+     		<input type="radio" name="CSS" value="non" id="non" />
+     		<label for="Femme" class="inline">Femme</label>
+
+		<!-- ************** Métier *************** -->
+		<p>Votre métier</p>
+		<select name="profession">
+			<option value="">***Choisir***</option>
+    		<option value="developpeur">Développeur</option>
+    		<option value="integrateur">Integrateur</option>
+    		<option value="webdesigner">Webdesigner</option>
+			<option value="webdesigner">Vite Appreneur</option>
+		</select>
+
+		<!-- ************** Date de Naissance *************** -->
+			<label for="date" class="definie">Votre date de naissance</label>
+			<input type="date" name="date" class="definie">
+
+		<!-- ************** Couleur *************** -->
+			<label for="color" class="definie">Votre couleur préférée:</label>
+			<input type="color" name="color">
+
+		<!-- ************** Niveau de Codage *************** -->
+			<label for="range" class="definie">Votre niveau en codage (de 0 à 10)</label>
+			<input type="range" name="range" min="0" max ="10">
+
+		<!-- ************** Photo *************** -->
+			<label for="file" class="definie">Votre photo:</label>
+			<input type="file" name="file">
+
+		<!-- ************** Langages informatique maîtrisés *************** -->
+		<p>Language informatique maîtrisés:</p>
+
+			<input type="checkbox" id="html" name="html">
+			<label class="checkboxLabel" for="scales">HTML</label>
+			<br>
+			<br>
+			<input type="checkbox" id="html" name="html">
+			<label class="checkboxLabel" for="scales">CSS</label>
+			<br>
+			<br>
+			<input type="checkbox" id="html" name="html">
+			<label class="checkboxLabel" for="scales">PHP</label>
+			<br>
+			<br>
+			<input type="checkbox" id="html" name="html">
+			<label class="checkboxLabel" for="scales">Javascript</label>
+			<br>
+			<br>
+			<input type="checkbox" id="html" name="html">
+			<label class="checkboxLabel" for="scales">SQL</label>
+			<br>
+			<br>
+		<!-- ************** Commentaires *************** -->
+		<textarea name="commentaire"  cols="50" rows="10" maxlength="100">Des commentaires ?</textarea>
+		<br>
+		<br>
+		<!-- ************** Envoyer *************** -->
+		<input type="submit" value="Envoyer" class="definie">
+	</fieldset>
+</body>
+</html>
