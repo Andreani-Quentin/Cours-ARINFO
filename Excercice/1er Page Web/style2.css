@@ -1,0 +1,12 @@
+
+div
+{
+	font-size: 4em;
+	font-family: "Arial Black";
+}
+
+.parent {
+  display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center; /* alignement vertical */
+}

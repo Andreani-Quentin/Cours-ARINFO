@@ -1,0 +1,75 @@
+/*
+Author : Andreani Quentin;
+URL : ;
+Description : Exercice Arinfo (Première projet web)
+contact : q.andreani@gmail.com
+*/
+
+/* Élements principaux de la page */
+
+body
+{
+	background-color: black;
+}
+
+.bloc_pa
+{
+	width: 60%;
+	margin: auto;
+}
+
+/* Header */
+
+header
+{
+	font-family: "DKC Forever";
+}
+
+h1
+{
+	font-family: "DKC Forever";
+	color: white;
+	text-align: center;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: white;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Bannière */
+
+.banniere
+{
+	width: 100%;
+	margin: auto;
+}
+
+/* Aside */
+
+aside
+{
+	border-color: white;
+}
