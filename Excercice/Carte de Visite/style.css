@@ -1,0 +1,173 @@
+/* GLOBAL  */
+
+/* ON APPLIQUE UN RESET CSS  */
+
+* {
+    font-family: 'Sigmar', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(#4ed0e6, #cd18c5);
+    background-repeat: no-repeat;
+    height: 690px;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box
+{
+    margin-top: 220px;
+    width: 630px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.box_content
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0px;
+}
+
+.box_img
+{
+    margin-right: 35px;
+}
+
+.user_social
+{
+    display: flex;
+    align-content: flex-end;
+    margin-top: 10px;
+}
+
+.user_social i
+{
+    color: #eca5e8;
+}
+
+.user_contact i
+{
+    color: #ce16c5;
+}
+
+.user_contact li
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+i
+{
+    width: 30px;
+}
+
+img
+{
+    height: 255px;
+    width: auto;
+    border-radius: 20px
+}
+
+h1
+{
+    font-family: 'Sigmar One';
+    font-weight: bold;
+    color: #444141;
+    font-size: 2em;
+    margin-top: -10px;
+}
+
+h3
+{
+    color: #c3c3c3;
+    font-weight: normal;
+    margin-top: -15px;
+    font-size: 1em;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.user_social i:hover
+{
+    color: #00acee;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/* ON AJOUTE LE STYLE DE LA BANNIERE  */
+
+/* On commence par appliquer le style du container (la grosse boîte qui englobe le tout) en lui appliquant une couleur de fond en dégradé, une hauteur égale à la hauteur de la fenêtre et un display flex + justify-content & align-items en center pour centrer la deuxième boîte blanche */
+
+
+/* Ensuite on applique le style sur la deuxième boîte:
+    - un background
+    - une largeur fixe
+    - un display flex, JC (justify-content) et AI(align-items) en center pour center les éléments de la boîte au milieu
+    - j'ajoute un flex-wrap = wrap pour que les deux colonnes se superposent sur un petit écran
+    - j'ajoute du padding pour mettre une marge intérieure autour de la boîte
+    - j'ajoute du margin qui ne se verra que sur un écran de téléphone pour pouvoir apercevoir le fond bleu
+    - et enfin je met un border-radius pour arrondir les bords de la boîte */
+
+
+
+/* Je m'attaque ensuite à l'image:
+    - je donne une largeur définie à la div qui contient l'image pour gérer la taille de celle-ci
+    - j'ajoute un display flex JC center pour que l'image se centre sur format mobile */
+
+
+/* Je précise que l'image doit prendre la totalité de la largeur de la div "box_img", qui correspondra donc au maximum à 400px.
+J'ajoute aussi un border radius pour arrondir les bords de l'image */
+
+
+
+/* Idem pour la partie coordonnées, je précise que la largeur maximum doit etre de 400px et j'écarte un peu des infos pour que ca ne soit pas trop collé à la photo */
+
+
+/* Pour Finir, j'applique le style sur les différents éléments des coordonnées */
+
+
+/* Le nom et prénom  */
+
+
+/* le métier  */
+
+
+
+/* la liste des infos personnelles  */
+
+
+/* l'espacement entre les infos */
+
+
+/* Je change la couleur et la taille des icônes des coordonnées */
+
+
+
+/* Je mets un display flex sur les réseaux sociaux pour les placer en ligne  */
+
+
+
+
+
+/* Je change la couleur et la taille des icônes des réseaux sociaux */
+
+
+/* Pour finir, j'ajoute un HOVER qui permet de modifier le style d'un élément en le survolant avec son curseur  */

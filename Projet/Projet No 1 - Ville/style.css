@@ -5,7 +5,7 @@ Description : Exercice Arinfo (Première projet web)
 contact : q.andreani@gmail.com
 */
 
-/* Élements principaux de la page */
+/***************** Élements principaux de la page **************/
 
 body
 {
@@ -19,7 +19,13 @@ body
 	margin: auto;
 }
 
-/* Header */
+.corps
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+/**************************** Header ******************************/
 
 header
 {
@@ -31,7 +37,7 @@ header
 	align-items: center;	
 }
 
-/* Navigation */
+/**************************** Navigation ***************************/
 
 nav ul
 {
@@ -58,7 +64,52 @@ nav a:hover
     border-bottom: 3px solid yellow;
 }
 
-/* Bannière */
+li {
+list-style:none !important;
+color:#FFF;
+padding:10px;
+font-size:20px;
+text-decoration:none;
+}
+ 
+nav ul {
+padding:0;
+margin:0;
+}
+ 
+nav ul li {
+list-style: none;
+line-height:44px;
+float:left;
+background-color: black;
+}
+ 
+nav ul li a {
+color:#FFF;
+padding:10px;
+font-size:20px;
+text-decoration:none;
+}
+ 
+li a:hover {
+border-bottom:3px yellow solid;
+}
+nav ul li ul { display:none; } /* Rend le menu déroulant caché par défaut */
+ 
+nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+z-index:99999;
+display:list-item !important;
+position:absolute;
+margin-top:5px;
+margin-left:-10px;
+}
+ 
+nav ul li:hover ul li {
+float:none;
+}
+
+
+/*************************** Bannière *************************/
 
 .ban
 {
@@ -67,9 +118,10 @@ nav a:hover
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
-/* Aside */
+/******************************* Aside *************************/
 
 aside
 {
@@ -82,6 +134,7 @@ aside
 	flex-direction: column;
 	align-items: center;
 	background: #5A5A5A;
+	margin-right: 50px;
 }
 
 aside h2
@@ -101,6 +154,12 @@ aside figure
 	font-size: 0.8em;
 }
 
+aside table
+{
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
 aside td
 {
 	width: 150px;
@@ -114,4 +173,126 @@ aside td
 	padding-bottom: 3px;
 	background: black;
 	width: 300px
+}
+
+.flex_start
+{
+	display: flex;
+	align-content: flex-start;
+	font-weight: bold;
+}
+
+/******************************** Section ***************************/
+
+section
+{
+	color: white;
+}
+
+section h2
+{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.intro
+{
+	color: white;
+	font-size: 1.3em;
+	font-family: 'Courier New';
+	text-align: justify;
+}
+
+.border_top
+{
+	border-top: 1px solid white;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+.iframe
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.iframe_marge
+{
+	margin-right: 70px;
+}
+
+.origine_section
+{
+	display: flex;
+}
+/* Footer */
+
+footer
+{
+	color: white;
+	text-align: center;
+}
+
+/* Contact */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid white; /* Gray border */
+  border-radius: 0px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input, select, textarea
+{
+	background-color: black;
+	color: white;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+label
+{
+	color: white;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+	width: 700px;
+  	border-radius: 0px;
+  	border: 1px solid white;
+  	background-color: #5A5A5A;
+  	padding: 20px;
+}
+
+.contact_block
+{
+	display: flex;
+	justify-content: center;
+}
+
+.contact_h2
+{
+	font-family: 'DKC Forever';
+	color: white;
+	text-align: center;
 }

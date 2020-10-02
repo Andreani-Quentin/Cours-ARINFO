@@ -1,0 +1,43 @@
+/* Navigation */
+
+body
+{
+	margin: 0px;
+}
+
+nav
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0px 0px 15px grey;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li
+{
+    margin-right: 15px;
+    margin-right: 80px;
+}
+
+nav a
+{
+    font-size: 1.1em;
+    color: #ff9a17;
+    padding-bottom: 3px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+}
+
+nav a:hover
+{
+    color: black;
+    border-bottom: 3px solid black;
+}

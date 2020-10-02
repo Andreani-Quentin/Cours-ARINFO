@@ -1,0 +1,146 @@
+
+
+article div {
+    background: #eee;
+    border: solid 1px #e6e6e6;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    width: 75px;
+    margin-left: 8px;
+}
+
+#ex div {
+    display: block;
+    margin: auto;
+    width: 1000px;
+}
+
+/* Exercice 1 */
+/*Le bloc doit devenir rouge à partir de 800px*/
+
+@media screen and (max-width: 800px)
+{
+    .boite
+    {
+        background-color: red;
+    }
+}
+
+/* Exercice 2 */
+/*Les blocs doivent prendre toute la largeur de l'écran et être en colonne à partir de 950px*/
+
+@media screen and (max-width: 950px)
+{
+    #ex2 h2
+    {
+    }
+
+    .large
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px
+    }
+    .block_large
+    {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+    
+
+/* Exercice 3 */
+/*Le bloc doit devenir rouge entre 960px et 640px*/
+
+@media all and (min-width: 640px) and (max-width: 960px)
+{
+    .ex03
+    {
+        background-color: red;
+    }
+}
+
+/* Exercice 4 */
+/*Le bloc doit changer de couleur, de taille de font et de hauteur tout les 500px*/
+
+@media all and (min-width: 0px) and (max-width: 500px)
+{
+    .change
+    {
+        background-color: red;
+        height: 100px;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 1000px)
+{
+    .change
+    {
+        background-color: green;
+        height: 200px;
+    }
+}
+@media all and (min-width: 1500px) and (max-width: 2000px)
+{
+    .change
+    {
+        background-color: blue;
+        height: 300px;
+    }
+}
+@media all and (min-width: 2500px) and (max-width: 3000px)
+{
+    .change
+    {
+        background-color: black;
+        height: 400px;
+    }
+}
+
+/* Exercice 5 */
+/*Le bloc doit avoir 4 changements de couleurs et 4 changements de largeurs*/
+
+@media all and (min-width: 0px) and (max-width: 200px)
+{
+    .change2
+    {
+        background-color: red;
+        width: 100px;
+    }
+}
+@media all and (min-width: 200px) and (max-width: 300px)
+{
+    .change2
+    {
+        background-color: green;
+        width: 200px;
+    }
+}
+@media all and (min-width: 400px) and (max-width: 600px)
+{
+    .change2
+    {
+        background-color: blue;
+        width: 300px;
+    }
+}
+@media all and (min-width: 600px) and (max-width: 3000px)
+{
+    .change2
+    {
+        background-color: black;
+        width: 700px;
+
+    }
+}
+
+
+
+
+
+
