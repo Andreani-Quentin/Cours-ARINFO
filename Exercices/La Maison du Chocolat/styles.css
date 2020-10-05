@@ -17,17 +17,15 @@ body
 	color: #e83b89;
 }
 
-
-/************************** Header **************************/
-header h1
-{
-	font-family: "Crete Round";
-}
-
 .contenu
 {
 	display: flex;
 	justify-content: center;
+}
+/************************** Header **************************/
+header h1
+{
+	font-family: "Crete Round";
 }
 
 nav ul
@@ -263,26 +261,6 @@ nav a
 	border: 1px solid #e83b89;
 	margin-left: 10px;
 }
-@media screen and (max-width: 800px)
-{
-	#laptop
-	{
-		display: none;
-	}
-	.contenu
-	{
-		display: flex;
-		flex-direction: initial;
-	}
-}
-
-@media screen and (min-width: 800px)
-{
-	#mob
-	{
-		display: none;
-	}
-}
 /************************** Footer **************************/
 footer
 {
@@ -309,4 +287,191 @@ footer h1
 .copyright
 {
 	color: #878787;
+}
+
+/************************** Responsive **************************/
+
+@media screen and (max-width: 800px)
+{
+	#laptop
+	{
+		display: none;
+	}
+
+	.contenu
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header h1
+	{
+		display: block;
+		margin: auto;
+		font-size: 1.4em;
+		margin-top: 25px;
+	}
+
+	nav li
+	{
+		display: flex;
+		white-space: nowrap;
+		font-size: 0.5em;
+	}
+	nav ul
+	{
+		padding-left: 0px;
+		margin-top: 0px;
+	}
+
+	#main-image
+{
+	background: url('images/main.jpg') center;
+	background-size: 270%;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+	#main-image h2
+	{
+		font-size: 1.4em;
+	}
+
+	#main-image a
+{
+	background-color: #e83b89;
+	width: 80px;
+	margin: auto;
+	color: white;
+	text-decoration: none;
+	font-family: "Crete Round";
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 50px;
+	font-size: 0.9em;
+}
+
+	#steps ul
+	{
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0px;
+	}
+	#step-2
+	{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#contact p
+	{
+		width: 100%;
+	}
+
+	#possibilities
+	{
+		background-color: #efefef;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0px;
+	}	
+	#possibilities article
+	{
+		background-size: 110%;
+		border-radius: 10px;
+		height: 170px;
+		width: 270px;
+		margin-left: 0px;
+		padding: 0px;
+		margin-bottom: 15px;
+	}
+	.overlay
+	{
+		width: 140px;
+		height: 170px;
+		background-color: rgba(255, 255, 255, 0.9);
+		border-radius: 10px 0px 0px 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.overlay h4
+	{
+		color: #3e3e3e;
+		text-transform: uppercase;
+		font-size: 1em;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 15px;
+	}
+
+	.overlay p
+	{	
+		font-style: italic;
+		color: #878787;
+		width: 90px;
+		font-size: 0.8em;
+		margin-left: 30px;
+		margin-top: -10px;
+	}
+
+	.overlay a
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #e83b89;
+		border-radius: 5px;
+		text-decoration: none;
+		color: white;
+		width: 90px;
+		height: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 0.8em;
+		margin-bottom: 20px;
+	}
+	#contact
+	{
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
+	#contact h3
+	{
+		width: 280px;
+		font-size: 1.3em;
+	}
+	#contact input[type="submit"]
+	{
+		margin-left: 130px;
+	}
+	#mob label[for="name"]
+	{
+		margin-right: 17px;
+	}
+	footer
+	{
+		height: 200px;
+	}
+	footer h1
+	{
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (min-width: 800px)
+{
+	#mob
+	{
+		display: none;
+	}
 }
