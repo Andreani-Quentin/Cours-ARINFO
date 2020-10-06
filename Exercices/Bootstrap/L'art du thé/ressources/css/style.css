@@ -1,0 +1,205 @@
+/* DOCUMENT INFORMATION
+	- Document: thé thème
+	- Version: 1.0.0
+	- Author: Quentin
+*/
+
+/* COLORS
+	- defaut body text #eee
+	- h1
+	- h2
+	- h3
+
+	- button
+	- button:hover
+
+	- icon 		black
+
+	-border
+*/
+
+/* FONTS
+	- Default
+	- Subtitle
+*/
+
+/* CSS DIRECTORY
+	1. =GLOBAL
+	2. =HEADER
+	3. =PRODUITS
+*/
+
+/* GLOBAL
+============================================ */
+
+html {
+	background-color: #fff
+}
+
+h1, h2, h3{
+	font-family: 'Tesla', 'Arial', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	word-spacing: 8px;
+}
+
+h1 {
+	color: #ffff;
+}
+
+h2 {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: white;
+	width: 100px;
+	content: "";
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+h3 {
+	font-size: 1.5em;
+	color: white;
+}
+
+h4{
+	color: white;
+	font-family: 'Space Age';
+	text-align: center;
+}
+
+p {
+	font-size: 12px;
+	line-height: 24px;
+	color: white;
+}
+
+section
+{
+	padding: 30px 0px 60px 0px;
+}
+
+/* HEADER
+============================================ */
+
+header {
+	background-image: linear-gradient (	rgba(0,0,0,0),
+										rgba(0,13,30,0.5)
+														,
+								url(../images/space4.jpg));
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+.home-title {
+	position: absolute;
+	top: 30%;
+}
+
+.home-title h1 {
+	font-size: 4em;
+}
+
+.home-title p {
+	font-family: 'Space Age', 'Arial', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+/* BUTON */
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: background-color 1s, color 1s;
+}
+
+.btn-full {
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	margin-right: 15px;
+}
+
+.btn-full:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.btn-ghost {
+	border: 1px solid white;
+	color: #ffff
+}
+
+.btn-ghost:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
+/* SYSTEM SOLAIRE
+============================================ */
+.back_system {
+	background-image: url("../images/space6.jpg");
+	height: 100vh;
+	background-position: 10% 50%;
+	background-size: 90%; 
+	
+}
+.produits-plus {
+	margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon{
+	transform: translateX(20px);
+	color: blue;
+}
+
+.produits-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.produits-icon {
+	font-size: 34px;
+	color: white;
+	transition: all 1s;
+}
+
+.color_white
+{
+	color: white;
+}
+
+/* TYPES DE PLANETES
+============================================ */
+.type_planete {
+	background-color: black;
+}
+
+.terre_size{
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	padding-top: 100px;
+	margin-bottom: 75px;
+}
+.jupiter_size{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+}
+
