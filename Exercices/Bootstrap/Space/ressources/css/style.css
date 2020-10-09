@@ -100,6 +100,10 @@ header {
 	background-size: cover;
 }
 
+.nav_back {
+	background-color: black;
+}
+
 .home-title {
 	position: absolute;
 	top: 30%;
@@ -114,6 +118,12 @@ header {
 	color: white;
 	text-transform: uppercase;
 	font-size: 1.2em;
+}
+
+.logo
+{
+	font-family: "Tesla";
+	color: white;
 }
 
 /* BUTON */
@@ -210,7 +220,8 @@ header {
 	display: block;
 	margin: 0 auto;
 	width: 40%;
-	margin-bottom: 75px;
+	padding-top: 80px;
+	margin-bottom: 100px;
 }
 .jupiter_size{
 	display: block;
